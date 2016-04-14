@@ -1,4 +1,6 @@
 {{#each model as |order|}}
-    Orders {{order.id}} from {{order.name}}<br>
+    {{#link-to "order" order}}
+        Orders {{order.id}} from {{order.name}}<br>
+    {{/link-to}}
 {{/each}}
 {{outlet}}
