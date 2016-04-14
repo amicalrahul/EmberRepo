@@ -1,2 +1,4 @@
-Oredrs {{model.id}} from {{model.name}}
+{{#each model as |order|}}
+    Orders {{order.id}} from {{order.name}}<br>
+{{/each}}
 {{outlet}}
