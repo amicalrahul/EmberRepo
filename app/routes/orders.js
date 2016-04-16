@@ -6,5 +6,5 @@ export default Ember.Route.extend({
         return store.getOrders();
     },
     
-    store: Ember.inject.service('store')
+    store: Ember.inject.service()
 });

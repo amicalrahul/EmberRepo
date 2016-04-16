@@ -5,5 +5,5 @@ export default Ember.Route.extend({
         const store = this.get('store');
         return store.getOrderById(params.order_id);
     },
-    store: Ember.inject.service('store')
+    store: Ember.inject.service()
 });
